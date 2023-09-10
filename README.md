@@ -9,9 +9,9 @@ Este es el repositorio del *Grupo 8*, cuyos integrantes son:
 ## Wiki
 * Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-8/wiki)
 
+
 ## Videos
 * [Video presentación Hito 1](https://youtu.be/GlX_-8Jp7Is)
-* Etc ...
 
 
 ## Aspectos técnicos relevantes
