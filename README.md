@@ -15,5 +15,5 @@ Este es el repositorio del *Grupo 8*, cuyos integrantes son:
 
 
 ## Aspectos técnicos relevantes
-Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
+* Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
 
