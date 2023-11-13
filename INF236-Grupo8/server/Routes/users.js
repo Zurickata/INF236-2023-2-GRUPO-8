@@ -1,15 +1,14 @@
-const {Router} = require('express');
+const { Router } = require('express');
 const router = Router();
 
-const {getUsers, updateUser, deleteUser} = require('../Controllers/users.controller');
+router.route("/")
+    .get((req, res) => res.send('Calendario'));
 
-router.route('/')
-    .get(getUsers)
-    .post(createUser)
-    
+//router.route("/:id")
+//    .get()
+//    .put()
+//    .post()
+//    .delete()
 
-router.route('/:id')
-    .delete(deleteUser)
-    .put(updateUser)
 
 module.exports = router;
