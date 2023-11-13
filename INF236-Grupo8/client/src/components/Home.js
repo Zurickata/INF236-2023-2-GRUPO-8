@@ -1,3 +1,6 @@
+import Navigation from './Navigation'
+import './Home.css'
+
 export function Home({ user, setUser }) {
 
     const handleLogout = () => {
@@ -6,9 +9,7 @@ export function Home({ user, setUser }) {
 
     return (
         <div>
-            <h1>Bienvenido</h1>
-            <h2>{user}</h2>
-            <button onClick={handleLogout}>Cerrar sesion</button>
+            <Navigation user={user} setUser={setUser}/>        
         </div>
     )
 }

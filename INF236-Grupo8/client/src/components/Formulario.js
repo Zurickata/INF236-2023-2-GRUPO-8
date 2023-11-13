@@ -1,6 +1,5 @@
-import "./Formulario.css"
 import { useState } from "react"
-
+import './Formulario.css'
 export function Formulario({ setUser }) {
     const [nombre, setNombre] = useState("")
     const [contrasena, setcontrasena] = useState("")
