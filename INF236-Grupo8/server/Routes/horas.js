@@ -6,7 +6,11 @@ const { getHs, getH, createH, updateH, deleteH } = require('../Controllers/c_hor
 router.route("/")
     .get(getHs)
     .get(getH)
+router.route("/:id")
+    .get(getHs)
+    .get(getH)
     .post(createH)
-    .put(updateH);
+    .put(updateH)
+    .delete(deleteH);
 
 module.exports = router;

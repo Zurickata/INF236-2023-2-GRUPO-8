@@ -21,7 +21,7 @@ app.listen(app.get("port"), () =>{
 });
 
 //Routes
-app.use('/calendario', require('./Routes/horas.js'))
-//app.use('/calendario', require('./Routes/users'))
+app.use('/usuario', require('./Routes/users'))
+app.use('/calendario', require('./Routes/horas'))
 
 module.exports = app;
