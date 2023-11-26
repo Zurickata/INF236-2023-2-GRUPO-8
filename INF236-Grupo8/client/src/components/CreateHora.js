@@ -54,7 +54,7 @@ export default class CreateHora extends Component {
                                         <input
                                             type='text'
                                             className='form-control'
-                                            maxlength='8'
+                                            maxLength='8'
                                             required
                                             onChange={this.onChangeUsername}
                                         />
@@ -63,7 +63,7 @@ export default class CreateHora extends Component {
                                         <input
                                             type='text'
                                             className='form-control'
-                                            maxlength='1'
+                                            maxLength='1'
                                             placeholder="Dv"
                                             required
                                             onChange={this.onChangeUsername}
@@ -76,19 +76,19 @@ export default class CreateHora extends Component {
                                 <label className="form-label">Tipo de hora</label>
                                 <div className="form-check form-check-inline">
                                     <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required />
-                                    <label className="form-check-label" for="inlineRadio1">Radiografía</label>
+                                    <label className="form-check-label" htmlFor="inlineRadio1">Radiografía</label>
                                 </div>
                                 <div className="form-check form-check-inline">
                                     <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required />
-                                    <label className="form-check-label" for="inlineRadio2">Scanner</label>
+                                    <label className="form-check-label" htmlFor="inlineRadio2">Scanner</label>
                                 </div>
                                 <div className="form-check form-check-inline">
                                     <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" required />
-                                    <label className="form-check-label" for="inlineRadio3">Ecografía</label>
+                                    <label className="form-check-label" htmlFor="inlineRadio3">Ecografía</label>
                                 </div>
                                 <div className="form-check form-check-inline">
                                     <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" required />
-                                    <label className="form-check-label" for="inlineRadio4">Resonancia</label>
+                                    <label className="form-check-label" htmlFor="inlineRadio4">Resonancia</label>
                                 </div>
                             </div>
                             <p></p>
@@ -97,7 +97,7 @@ export default class CreateHora extends Component {
                                 <div className="d-flex flex-row align-items-center mb-2">
                                     <i className="fa-lg fa-fw"></i>
                                     <div className="form-outline flex-fill">
-                                        <input placeholder="Select date" name="Fsalida" type="date" id="Fsalida" class="form-control" format="yyyy/mm/dd" required />
+                                        <input placeholder="Select date" name="Fsalida" type="date" id="Fsalida" className="form-control" format="yyyy/mm/dd" required />
                                     </div>
                                 </div>
                             </div>

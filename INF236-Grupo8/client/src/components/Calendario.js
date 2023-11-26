@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 
 var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -12,21 +11,20 @@ for(var i = 1; i<= diasMes; i++){
   dias.push(i)
 }
 
-export default class Calendario_Rad extends Component {
-  render() {
+export default function Calendario_Scan(){
     return (
       <div>
         <div className="container-fluid">
           <div className='row align-items-start p-2'>
             <div className="btn-group btn-group-toggle col-md-4" data-toggle="buttons">
               <Link className="btn btn-secondary col-md-1" to={"/Calendario/Resonancia/"+anoActual+"_"+mes} role="button">Resonancia</Link>
-              <Link className="btn btn-secondary col-md-1" to={"/Calendario/Scanner/"+anoActual+"_"+mes} role="button">Scanner</Link>
-              <Link className="btn btn-secondary active col-md-1" to={"/Calendario/Radiografia/"+anoActual+"_"+mes} role="button">Radiografía</Link>
+              <Link className="btn btn-secondary active col-md-1" to={"/Calendario/Scanner/"+anoActual+"_"+mes} role="button">Scanner</Link>
+              <Link className="btn btn-secondary col-md-1" to={"/Calendario/Radiografia/"+anoActual+"_"+mes} role="button">Radiografía</Link>
               <Link className="btn btn-secondary col-md-1" to={"/Calendario/Ecografia/"+anoActual+"_"+mes} role="button">Ecografía</Link>
             </div>
-            <Link className="btn btn-primary col-md-1" to='/Calendario' role="button">Mes anterior</Link>
-            <div className='text-center col-md-6'><h4>Calendario de {mesActual} de Radiografía {anoActual}</h4></div>
-            <Link className="btn btn-primary col-md-1" to='/Calendario' role="button">Mes sigiente</Link>
+            <Link className="btn btn-primary col-md-1" to={'/Calendario/Scanner/'+anoActual+'_'+(mes-1)} role="button">Mes anterior</Link>
+            <div className='text-center col-md-6'><h4>Calendario de {mesActual} de Scanner {anoActual}</h4></div>
+            <Link className="btn btn-primary col-md-1" to={'/Calendario/Scanner/'+anoActual+'_'+(mes+1)} role="button">Mes sigiente</Link>
           </div>
         </div>
         <div>
@@ -40,32 +38,26 @@ export default class Calendario_Rad extends Component {
               <div className='card cardbody col m-2'>
                 <div className='container-fluid'>
                   <div className='row align-items-start'>
-                  <button type="button" className="col btn btn-outline-success btn-lg m-2">
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_08:30_Rad'}>08:30</Link></h5>
+                    <button type="button" className="col btn btn-outline-success btn-lg m-2">
+                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_08:30_Scan'}>08:30</Link></h5>
                     </button>
                     <button type="button" className="col btn btn-outline-success btn-lg m-2">
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_09:00_Rad'}>09:00</Link></h5>
+                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_09:30_Scan'}>09:30</Link></h5>
                     </button>
                     <button type="button" className="col btn btn-outline-success btn-lg m-2">
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_09:30_Rad'}>09:30</Link></h5>
+                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_10:30_Scan'}>10:30</Link></h5>
                     </button>
                     <button type="button" className="col btn btn-outline-success btn-lg m-2">
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_10:00_Rad'}>10:00</Link></h5>
+                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_11:30_Scan'}>11:30</Link></h5>
                     </button>
                     <button type="button" className="col btn btn-outline-success btn-lg m-2" >
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_10:30_Rad'}>10:30</Link></h5>
+                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_12:30_Scan'}>12:30</Link></h5>
                     </button>
                     <button type="button" className="col btn btn-outline-success btn-lg m-2" >
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_11:00_Rad'}>11:00</Link></h5>
+                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_14:00_Scan'}>14:00</Link></h5>
                     </button>
                     <button type="button" className="col btn btn-outline-success btn-lg m-2" >
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_11:30_Rad'}>11:30</Link></h5>
-                    </button>
-                    <button type="button" className="col btn btn-outline-success btn-lg m-2" >
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_12:00_Rad'}>12:00</Link></h5>
-                    </button>
-                    <button type="button" className="col btn btn-outline-success btn-lg m-2" >
-                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_12:30_Rad'}>12:30</Link></h5>
+                        <h5><Link className="nav-link" to={'/Calendario/Crear/'+anoActual+'_'+mes+'_'+dia+'_15:00_Scan'}>15:00</Link></h5>
                     </button>
                   </div>
                 </div>
@@ -77,4 +69,3 @@ export default class Calendario_Rad extends Component {
 
     )
   }
-}
