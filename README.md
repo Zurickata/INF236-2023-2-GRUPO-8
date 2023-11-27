@@ -12,6 +12,7 @@ Este es el repositorio del *Grupo 8*, cuyos integrantes son:
 
 ## Videos
 * [Video presentación Hito 1](https://youtu.be/GlX_-8Jp7Is)
+* [Video de resultados Hito 6 y 7](https://www.youtube.com/watch?v=bhuy0lvzOak)
 
 
 ## Aspectos técnicos relevantes
