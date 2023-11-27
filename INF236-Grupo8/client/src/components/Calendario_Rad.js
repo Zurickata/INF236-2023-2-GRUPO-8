@@ -87,7 +87,7 @@ export default function Calendario_Rad() {
           </div>
           <Link
             className="btn btn-primary col-md-1"
-            to={"/Calendario/Ecografia/" + anio2 + "/" + mes2}
+            to={"/Calendario/Radiografia/" + anio2 + "/" + mes2}
             role="button"
           >
             Mes anterior
@@ -99,7 +99,7 @@ export default function Calendario_Rad() {
           </div>
           <Link
             className="btn btn-primary col-md-1"
-            to={"/Calendario/Ecografia/" + anio3 + "/" + mes3}
+            to={"/Calendario/Radiografia/" + anio3 + "/" + mes3}
             role="button"
           >
             Mes sigiente
@@ -303,6 +303,69 @@ export default function Calendario_Rad() {
                           }
                         >
                           12:30
+                        </Link>
+                      </h5>
+                    </button>
+                    <button
+                      type="button"
+                      className="col btn btn-outline-success btn-lg m-2"
+                    >
+                      <h5>
+                        <Link
+                          className="nav-link"
+                          to={
+                            "/Calendario/Crear/" +
+                            anio1 +
+                            "/" +
+                            mes1 +
+                            "/" +
+                            dia +
+                            "/14:30/Radiografia"
+                          }
+                        >
+                          14:30
+                        </Link>
+                      </h5>
+                    </button>
+                    <button
+                      type="button"
+                      className="col btn btn-outline-success btn-lg m-2"
+                    >
+                      <h5>
+                        <Link
+                          className="nav-link"
+                          to={
+                            "/Calendario/Crear/" +
+                            anio1 +
+                            "/" +
+                            mes1 +
+                            "/" +
+                            dia +
+                            "/15:00/Radiografia"
+                          }
+                        >
+                          15:00
+                        </Link>
+                      </h5>
+                    </button>
+                    <button
+                      type="button"
+                      className="col btn btn-outline-success btn-lg m-2"
+                    >
+                      <h5>
+                        <Link
+                          className="nav-link"
+                          to={
+                            "/Calendario/Crear/" +
+                            anio1 +
+                            "/" +
+                            mes1 +
+                            "/" +
+                            dia +
+                            "/15:30/Radiografia"
+                          }
+                        >
+                          15:30
                         </Link>
                       </h5>
                     </button>

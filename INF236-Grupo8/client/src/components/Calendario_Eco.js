@@ -307,6 +307,69 @@ export default function Calendario_Eco() {
                         </Link>
                       </h5>
                     </button>
+                    <button
+                      type="button"
+                      className="col btn btn-outline-success btn-lg m-2"
+                    >
+                      <h5>
+                        <Link
+                          className="nav-link"
+                          to={
+                            "/Calendario/Crear/" +
+                            anio1 +
+                            "/" +
+                            mes1 +
+                            "/" +
+                            dia +
+                            "/12:30/Ecografia"
+                          }
+                        >
+                          14:30
+                        </Link>
+                      </h5>
+                    </button>
+                    <button
+                      type="button"
+                      className="col btn btn-outline-success btn-lg m-2"
+                    >
+                      <h5>
+                        <Link
+                          className="nav-link"
+                          to={
+                            "/Calendario/Crear/" +
+                            anio1 +
+                            "/" +
+                            mes1 +
+                            "/" +
+                            dia +
+                            "/12:30/Ecografia"
+                          }
+                        >
+                          15:00
+                        </Link>
+                      </h5>
+                    </button>
+                    <button
+                      type="button"
+                      className="col btn btn-outline-success btn-lg m-2"
+                    >
+                      <h5>
+                        <Link
+                          className="nav-link"
+                          to={
+                            "/Calendario/Crear/" +
+                            anio1 +
+                            "/" +
+                            mes1 +
+                            "/" +
+                            dia +
+                            "/12:30/Ecografia"
+                          }
+                        >
+                          15:30
+                        </Link>
+                      </h5>
+                    </button>
                   </div>
                 </div>
               </div>

@@ -93,7 +93,7 @@ export default function Calendario_Scan() {
           </div>
           <Link
             className="btn btn-primary col-md-1"
-            to={"/Calendario/Ecografia/" + anio2 + "/" + mes2}
+            to={"/Calendario/Scanner/" + anio2 + "/" + mes2}
             role="button"
           >
             Mes anterior
@@ -105,7 +105,7 @@ export default function Calendario_Scan() {
           </div>
           <Link
             className="btn btn-primary col-md-1"
-            to={"/Calendario/Ecografia/" + anio3 + "/" + mes3}
+            to={"/Calendario/Scanner/" + anio3 + "/" + mes3}
             role="button"
           >
             Mes sigiente

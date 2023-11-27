@@ -87,7 +87,7 @@ export default function Calendario_Res() {
           </div>
           <Link
             className="btn btn-primary col-md-1"
-            to={"/Calendario/Ecografia/" + anio2 + "/" + mes2}
+            to={"/Calendario/Resonancia/" + anio2 + "/" + mes2}
             role="button"
           >
             Mes anterior
@@ -99,7 +99,7 @@ export default function Calendario_Res() {
           </div>
           <Link
             className="btn btn-primary col-md-1"
-            to={"/Calendario/Ecografia/" + anio3 + "/" + anio3}
+            to={"/Calendario/Resonancia/" + anio3 + "/" + anio3}
             role="button"
           >
             Mes sigiente
