@@ -10,8 +10,7 @@ import Historial from './components/Historial'
 import Perfil from './components/Perfil'
 import Navigation from './components/Navigation'
 import Create_user from './components/Create_user'
-import Iniciar_sesion from './components/Iniciar_sesion';
-import Calendario from './components/Calendario';
+import Iniciar_sesion from './components/Iniciar_sesion'
 
 function App() {
 
@@ -20,16 +19,15 @@ function App() {
       <Navigation/>
 
       <Routes>
-        <Route path='/Calendario/Resonancia/:id' exact Component={Calendario_Res}/>
-        <Route path='/Calendario/Scanner/:id' exact Component={Calendario_Scan}/>
-        <Route path='/Calendario/Radiografia/:id' exact Component={Calendario_Rad}/>
-        <Route path='/Calendario/Ecografia/:id' exact Component={Calendario_Eco}/>
-        <Route path='/Calendario/Crear/:id' exact Component={CreateHora}/>
+        <Route path='/Calendario/Resonancia/:anio/:mes' exact Component={Calendario_Res}/>
+        <Route path='/Calendario/Scanner/:anio/:mes' exact Component={Calendario_Scan}/>
+        <Route path='/Calendario/Radiografia/:anio/:mes' exact Component={Calendario_Rad}/>
+        <Route path='/Calendario/Ecografia/:anio/:mes' exact Component={Calendario_Eco}/>
+        <Route path='/Calendario/Crear/:anio/:mes/:dia/:hora/:tipo'  exact Component={CreateHora}/>
         <Route path='/Calendario/Historial' exact Component={Historial}/>
         <Route path='/Perfil' exact Component={Perfil}/>
         <Route path='/Crear_usuario' exact Component={Create_user}/>
         <Route path='/Iniciar_sesion' exact Component={Iniciar_sesion}/>
-        <Route path='/Calendario/Calendario/:id' exact Component={Calendario}/>
       </Routes>
     </Router>
   )

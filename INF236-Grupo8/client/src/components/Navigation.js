@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import axios from "axios";
 
 const fecha = new Date();
 const mes = fecha.getMonth() + 1; //mes en numero (sumarle 1 para tener el actual)
@@ -13,7 +14,7 @@ export default function Navigation() {
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <div className="nav-link" href="/">
-                  <Link className="nav-link" to={"/Calendario/Calendario/"+anoActual+"_"+mes}>Calendario</Link>
+                  <Link className="nav-link" to={"/Calendario/Resonancia/"+anoActual+"/"+mes}>Calendario</Link>
                 </div>
               </li>
               <li className="nav-item">
