@@ -16,30 +16,36 @@ horasCtrl.getH = async (req, res) => {
 
 //Crear las horas
 horasCtrl.createH = async (req, res) => {
-    const { paciente, rutP, dvP, fecha, horario, tipo_hora, creador }= req.body;
+    const { nombreP, rutP, dvP, tipoH, anio, mes, dia, hora, observacion, idCreador }= req.body;
     const newHora = new Hora({ //Aqui guardamos la nota
-        paciente,
+        nombreP,
         rutP,
         dvP,
-        fecha,
-        horario,
-        tipo_hora,
-        creader
+        tipoH,
+        anio,
+        mes,
+        dia,
+        hora,
+        observacion,
+        idCreador
     });
     await newHora.save();
 }
 
 //Actualizar una hora
 horasCtrl.updateH = async (req, res) =>{
-    const { paciente, rutP, dvP, fecha, horario, tipo_hora, creador }= req.body;
+    const { nombreP, rutP, dvP, tipoH, anio, mes, dia, hora, observacion, idCreador }= req.body;
     await Hora.findByIdAndUpdate(req.params.id, {
-        paciente,
+        nombreP,
         rutP,
         dvP,
-        fecha,
-        horario,
-        tipo_hora,
-        creador
+        tipoH,
+        anio,
+        mes,
+        dia,
+        hora,
+        observacion,
+        idCreador
     });
 }
 
